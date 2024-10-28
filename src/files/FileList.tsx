@@ -6,10 +6,13 @@ import {
   type Identifier,
   type RaRecord,
   useListContext,
-  Button,
   useGetOne,
 } from "react-admin";
+import Button from '@mui/material/Button';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+
 import { Icon } from "./Icon";
+import { Empty } from "./Empty";
 
 export const FileList = () => (
   <InfiniteList
@@ -32,8 +35,12 @@ const BackButton = () => {
       onClick={() => {
         setFilters({ parentId: JSON.stringify(data.parentId) || 0 });
       }}
-      label={data.name}
-    />
+      sx={{ textTransform: "none" }}
+      startIcon={<ChevronLeftIcon />}
+      >
+      {data.name}
+      </Button>
+    
   );
 };
 
@@ -50,6 +57,7 @@ const FileDatagrid = () => {
           return "";
         } else return "show";
       }}
+      empty={Empty}
     >
       <Icon />
       <TextField source="name" />
