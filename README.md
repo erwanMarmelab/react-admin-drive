@@ -8,7 +8,7 @@
 - [x] Add a image viewer
 - [x] Add a mp3 player
 - [x] Add a mp4 player
-- [ ] Add a doc editor (maybe with ra-markdown)
+- [x] Add a doc editor (maybe with ra-markdown)
 - [x] Add a PDF viewer
 - [ ] Add a sheet editor (maybe with ra-datagrid-ag)
 - [ ] Add a global search (algolia like)

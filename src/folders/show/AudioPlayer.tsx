@@ -10,6 +10,7 @@ export const AudioPlayer = () => (
           variant="h4"
           color="textPrimary"
           textAlign="center"
+          paddingTop={1}
           paddingBottom={2}
         >
           {record.name}
