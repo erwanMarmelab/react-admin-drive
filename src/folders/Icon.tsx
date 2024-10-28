@@ -1,5 +1,4 @@
 import { WithRecord } from "react-admin";
-import Typography from "@mui/material/Typography";
 import FolderIcon from "@mui/icons-material/Folder";
 import DescriptionIcon from "@mui/icons-material/Description";
 import ImageIcon from "@mui/icons-material/Image";
@@ -16,7 +15,7 @@ export const Icon = () => (
         case "Text":
           return <DescriptionIcon style={{ color: "red" }} />;
         case "Image":
-          return <ImageIcon style={{ color: "greenyellow" }} />;
+          return <ImageIcon style={{ color: "red" }} />;
         case "Video":
           return <SmartDisplayIcon style={{ color: "red" }} />;
         case "Phonic":

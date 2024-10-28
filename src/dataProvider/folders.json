@@ -3,12 +3,14 @@
     "id": 0,
     "name": "Root",
     "type": "Folder",
+    "color": "black",
     "parentId": null
   },
   {
     "id": 1,
     "name": "Music",
     "type": "Folder",
+    "color": "black",
     "parentId": 0
   },
   {
@@ -22,6 +24,7 @@
     "id": 3,
     "name": "Lessons",
     "type": "Folder",
+    "color": "black",
     "parentId": 2
   },
   {

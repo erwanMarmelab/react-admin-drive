@@ -14,4 +14,4 @@ export type FileType =
   | "Video"
   | "Phonic"
   | "Sheet";
-export type Color = "red" | "green" | "blue" | "pink" | "purple";
+export type Color = "red" | "green" | "blue" | "pink" | "purple" | "black";
