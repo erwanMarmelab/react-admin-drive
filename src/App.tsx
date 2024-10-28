@@ -7,7 +7,7 @@ import {
 } from "react-admin";
 import { Layout } from "./Layout";
 import { dataProvider } from "./dataProvider/dataProvider";
-import files from "./files";
+import folders from "./folders";
 
 export const App = () => (
   <Admin layout={Layout} dataProvider={dataProvider}>
@@ -25,7 +25,7 @@ export const App = () => (
     />
     <Resource
       name="folders"
-      {...files}
+      {...folders}
     />
   </Admin>
 );

@@ -14,13 +14,13 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { Icon } from "./Icon";
 import { Empty } from "./Empty";
 
-export const FileList = () => (
+export const FolderList = () => (
   <InfiniteList
     sort={{ field: "type", order: "ASC" }}
     filterDefaultValues={{ parentId: 0 }}
   >
     <BackButton />
-    <FileDatagrid />
+    <FolderDatagrid />
   </InfiniteList>
 );
 
@@ -44,7 +44,7 @@ const BackButton = () => {
   );
 };
 
-const FileDatagrid = () => {
+const FolderDatagrid = () => {
   const { setFilters } = useListContext();
   return (
     <Datagrid

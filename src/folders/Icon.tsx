@@ -1,5 +1,4 @@
 import { WithRecord } from "react-admin";
-import Typography from "@mui/material/Typography";
 import FolderIcon from "@mui/icons-material/Folder";
 import DescriptionIcon from "@mui/icons-material/Description";
 import ImageIcon from "@mui/icons-material/Image";
