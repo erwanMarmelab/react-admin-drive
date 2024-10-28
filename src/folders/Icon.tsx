@@ -15,7 +15,7 @@ export const Icon = () => (
         case "Text":
           return <DescriptionIcon style={{ color: "red" }} />;
         case "Image":
-          return <ImageIcon style={{ color: "greenyellow" }} />;
+          return <ImageIcon style={{ color: "red" }} />;
         case "Video":
           return <SmartDisplayIcon style={{ color: "red" }} />;
         case "Phonic":
