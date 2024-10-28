@@ -5,7 +5,7 @@
 - [x] Display "folders" and "files"
 - [x] Navigate between folders
 - [x] Edit folder/files names and folders colors
-- [ ] Add a image viewer
+- [x] Add a image viewer
 - [ ] Add a mp3 player
 - [ ] Add a mp4 player
 - [ ] Add a doc editor (maybe with ra-markdown)
