@@ -1,5 +1,11 @@
-[ {
+[
+  {
     "id": 1,
     "url": "/assets/images/landscape.webp"
-}
+  },
+  {
+    "id": 2,
+    "url": "/assets/videos/dance.mp4",
+    "type": "mp4"
+  }
 ]
