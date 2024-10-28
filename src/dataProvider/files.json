@@ -1,5 +1,9 @@
 [
   {
+    "id": 0,
+    "content": "This is a text file"
+  },
+  {
     "id": 1,
     "url": "/assets/images/landscape.webp"
   },

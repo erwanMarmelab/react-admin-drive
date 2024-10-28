@@ -21,7 +21,9 @@ export const FolderDatagrid = () => {
         if (record.type === "Folder") {
           setFilters({ parentId: record.id });
           return "";
-        } else return "show";
+        }
+        if (record.type === "Text" || record.type === "Sheet") return "edit";
+        return "show";
       }}
       empty={Empty}
     >
