@@ -6,7 +6,8 @@ import {
   ShowGuesser,
 } from "react-admin";
 import { Layout } from "./Layout";
-import { dataProvider } from "./dataProvider";
+import { dataProvider } from "./dataProvider/dataProvider";
+import files from "./files";
 
 export const App = () => (
   <Admin layout={Layout} dataProvider={dataProvider}>
@@ -21,6 +22,10 @@ export const App = () => (
       list={ListGuesser}
       edit={EditGuesser}
       show={ShowGuesser}
+    />
+    <Resource
+      name="folders"
+      {...files}
     />
   </Admin>
 );
