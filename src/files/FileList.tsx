@@ -16,6 +16,7 @@ export const FileList = (props: InfiniteListProps) => (
     >
       <Icon />
       <TextField source="name" />
+      <TextField source="type" />
       <EditButton />
     </Datagrid>
   </InfiniteList>

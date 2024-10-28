@@ -13,15 +13,15 @@ export const Icon = () => (
     label="icon"
     render={(record) => {
       switch (record.type) {
-        case "file_document":
+        case "Text":
           return <DescriptionIcon style={{ color: "red" }} />;
-        case "file_image":
+        case "Image":
           return <ImageIcon style={{ color: "greenyellow" }} />;
-        case "file_video":
+        case "Video":
           return <SmartDisplayIcon style={{ color: "red" }} />;
-        case "file_audio":
+        case "Phonic":
           return <AudioFileIcon style={{ color: "red" }} />;
-        case "file_sheet":
+        case "Sheet":
           return <GridOnIcon style={{ color: "green" }} />;
         default:
           return <FolderIcon style={{ color: record.color }} />;

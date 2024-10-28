@@ -8,10 +8,10 @@ export type File = {
 };
 
 export type FileType =
-  | "folder"
-  | "file_document"
-  | "file_image"
-  | "file_video"
-  | "file_audio"
-  | "file_sheet";
+  | "Folder"
+  | "Text"
+  | "Image"
+  | "Video"
+  | "Phonic"
+  | "Sheet";
 export type Color = "red" | "green" | "blue" | "pink" | "purple";

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 0,
+    "name": "Music",
+    "type": "Folder"
+  },
+  {
+    "id": 1,
+    "name": "University",
+    "type": "Folder",
+    "color": "blue"
+  },
+  {
+    "id": 2,
+    "name": "Lessons",
+    "type": "Folder"
+  },
+  {
+    "id": 3,
+    "name": "Programming",
+    "type": "Folder",
+    "color": "green"
+  },
+  {
+    "id": 4,
+    "name": "Books",
+    "type": "Folder",
+    "color": "red"
+  },
+  {
+    "id": 5,
+    "name": "Movies",
+    "type": "Folder",
+    "color": "pink"
+  },
+  {
+    "id": 6,
+    "name": "Business plan",
+    "type": "Text",
+    "fileReference": 0
+  },
+  {
+    "id": 7,
+    "name": "Landscapes",
+    "type": "Image",
+    "fileReference": 1
+  },
+  {
+    "id": 8,
+    "name": "Dance",
+    "type": "Video",
+    "fileReference": 2
+  },
+  {
+    "id": 9,
+    "name": "Podcast",
+    "type": "Phonic",
+    "fileReference": 3
+  },
+  {
+    "id": 10,
+    "name": "Funding",
+    "type": "Sheet",
+    "fileReference": 4
+  },
+  {
+    "id": 11,
+    "name": "Math",
+    "type": "Folder",
+    "color": "purple"
+  }
+]

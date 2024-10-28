@@ -24,7 +24,7 @@ export const App = () => (
       show={ShowGuesser}
     />
     <Resource
-      name="files"
+      name="folders"
       {...files}
     />
   </Admin>
