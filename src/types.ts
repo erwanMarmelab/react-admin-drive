@@ -13,5 +13,6 @@ export type FileType =
   | "Image"
   | "Video"
   | "Phonic"
+  | "PDF"
   | "Sheet";
 export type Color = "red" | "green" | "blue" | "pink" | "purple" | "black";

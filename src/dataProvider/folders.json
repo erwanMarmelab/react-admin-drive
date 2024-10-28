@@ -89,5 +89,12 @@
     "type": "Folder",
     "color": "purple",
     "parentId": 3
+  },
+  {
+    "id": 13,
+    "name": "CV/Resume",
+    "type": "PDF",
+    "fileReference": 5,
+    "parentId": 0
   }
 ]

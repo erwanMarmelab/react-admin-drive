@@ -23,9 +23,6 @@ export const App = () => (
       edit={EditGuesser}
       show={ShowGuesser}
     />
-    <Resource
-      name="folders"
-      {...folders}
-    />
+    <Resource name="folders" {...folders} />
   </Admin>
 );

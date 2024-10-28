@@ -12,5 +12,9 @@
     "id": 3,
     "url": "/assets/audio/chill_music.mp3",
     "type": "mp3"
+  },
+  {
+    "id": 5,
+    "url": "/assets/pdf/resume.pdf"
   }
 ]
