@@ -4,6 +4,7 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import ImageIcon from "@mui/icons-material/Image";
 import SmartDisplayIcon from "@mui/icons-material/SmartDisplay";
 import AudioFileIcon from "@mui/icons-material/AudioFile";
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import GridOnIcon from "@mui/icons-material/GridOn";
 import { File } from "../types";
 
@@ -20,6 +21,8 @@ export const Icon = () => (
           return <SmartDisplayIcon style={{ color: "red" }} />;
         case "Phonic":
           return <AudioFileIcon style={{ color: "red" }} />;
+        case "PDF":
+          return <PictureAsPdfIcon style={{ color: "red" }} />;
         case "Sheet":
           return <GridOnIcon style={{ color: "green" }} />;
         default:

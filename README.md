@@ -6,10 +6,10 @@
 - [x] Navigate between folders
 - [x] Edit folder/files names and folders colors
 - [x] Add a image viewer
-- [ ] Add a mp3 player
-- [ ] Add a mp4 player
+- [x] Add a mp3 player
+- [x] Add a mp4 player
 - [ ] Add a doc editor (maybe with ra-markdown)
-- [ ] Add a PDF viewer
+- [x] Add a PDF viewer
 - [ ] Add a sheet editor (maybe with ra-datagrid-ag)
 - [ ] Add a global search (algolia like)
 - [ ] Add breadcrumbs

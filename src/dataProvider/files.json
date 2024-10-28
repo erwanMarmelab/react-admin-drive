@@ -7,5 +7,14 @@
     "id": 2,
     "url": "/assets/videos/dance.mp4",
     "type": "mp4"
+  },
+  {
+    "id": 3,
+    "url": "/assets/audio/chill_music.mp3",
+    "type": "mp3"
+  },
+  {
+    "id": 5,
+    "url": "/assets/pdf/resume.pdf"
   }
 ]
