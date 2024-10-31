@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { AppBar, TitlePortal } from "react-admin";
 import {
   useSearchController,
   Search,
   SearchInput,
-  SearchResultContextProvider,
-  SearchResultsPanel,
   SearchHistoryPanel,
 } from "@react-admin/ra-search";
 import { Dialog, Box, Typography } from "@mui/material";
+import { MySearchResultPanel } from "./MySearchResultPanel";
+import type { File } from "../types";
 
 export const MyAppBar = () => {
   const [history, setHistory] = useState<string[]>([]);
@@ -19,15 +19,7 @@ export const MyAppBar = () => {
       onError: () => setIsResult(true),
     },
   });
-  const contextValue = React.useMemo(
-    () => ({
-      ...searchData,
-      onClose: () => undefined,
-    }),
-    [searchData],
-  );
   const handleChange = (event: any) => {
-    console.log(event?.target?.value);
     setIsResult(false);
     const query = event.target
       ? event.target.value
@@ -60,6 +52,7 @@ export const MyAppBar = () => {
         onClose={handleClose}
       />
       <Dialog open={open} onClose={handleClose}>
+        {/* // TODO: make it beau: minWidth / padding / etc */}
         <Box m={1}>
           <SearchInput
             onChange={handleChange}
@@ -71,16 +64,16 @@ export const MyAppBar = () => {
             searchData.error ? (
               <Typography color="error" variant="body2">
                 Server communication error
-                {searchData.error.message ? `: ${searchData.error.message}` : ""}
+                {searchData.error.message
+                  ? `: ${searchData.error.message}`
+                  : ""}
               </Typography>
             ) : (
-              <SearchResultContextProvider value={contextValue}>
-                {/* TODO: make my own panel */}
-                <SearchResultsPanel disablePadding onClick={handleClose} />
-                {/* <p>heheheeeeeeee:
-                  {JSON.stringify(searchData.data)}
-                </p> */}
-              </SearchResultContextProvider>
+              <MySearchResultPanel
+                data={searchData.data as File[] | undefined}
+                query={query}
+                onClose={() => setOpen(false)}
+              />
             )
           ) : history.length > 0 ? (
             <SearchHistoryPanel history={history} onSelect={doSearch} />
