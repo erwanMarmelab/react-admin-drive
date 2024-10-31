@@ -28,3 +28,7 @@ export const dataProvider = {
     };
   },
 };
+
+// TODO: lifecyclecallback -> beforeUpdate('folders', (data) => { ...data, last_updated: new Date() })
+
+// TODO: lifecyclecallback -> afterUpdate('file', (data) => { dataProvider.update('folder', {referenceFile: data.id}, {last_updated: new Date()}) })

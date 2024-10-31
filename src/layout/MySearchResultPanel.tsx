@@ -1,11 +1,12 @@
+import { useEffect } from "react";
 import { useRedirect } from "react-admin";
 import { useNavigate } from "react-router-dom";
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import { highlightSearchTerm } from "highlight-search-term";
 
 import { iconRender } from "../folders/Icon";
 import type { File } from "../types";
-import { useEffect } from "react";
+import { lastUpdateFormat } from "../folders/FolderDatagrid";
 
 export const MySearchResultPanel = ({
   data,
@@ -49,7 +50,7 @@ export const MySearchResultPanel = ({
 
   // TODO: make it beau
   return (
-    <div>
+    <Box px={1} py={2}>
       {data.map((file) => {
         const Icon = () => iconRender(file);
         return (
@@ -59,6 +60,7 @@ export const MySearchResultPanel = ({
             alignItems="center"
             gap={1.5}
             sx={{
+              padding: 1,
               cursor: "pointer",
               "& ::highlight(search)": {
                 backgroundColor: "yellow",
@@ -71,12 +73,15 @@ export const MySearchResultPanel = ({
             onClick={() => handleClick(file)}
           >
             <Icon />
-            <Typography variant="subtitle1" className="highlight">
+            <Typography variant="subtitle1" className="highlight" sx={{ flexGrow: 1 }}>
               {file.name}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Last modification on {lastUpdateFormat(file)}
             </Typography>
           </Stack>
         );
       })}
-    </div>
+    </Box>
   );
 };

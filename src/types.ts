@@ -5,6 +5,7 @@ export type File = {
   type: FileType;
   color: Color;
   fileReference: number;
+  last_update: string;
 };
 
 export type FileType =

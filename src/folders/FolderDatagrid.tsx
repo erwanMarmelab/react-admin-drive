@@ -4,11 +4,19 @@ import {
   type Identifier,
   type RaRecord,
   useListContext,
+  FunctionField,
 } from "react-admin";
+import { format, isToday } from "date-fns";
 
 import { Icon } from "./Icon";
 import { Empty } from "./Empty";
 import { FolderEditDialog } from "./DialogForm";
+import type { File } from "../types";
+
+export const lastUpdateFormat = (record: File) =>
+  isToday(new Date(record.last_update))
+    ? `Today at ${format(record.last_update, "K:mm aa")}`
+    : format(record.last_update, "MMMM d, yyyy");
 
 export const FolderDatagrid = () => {
   const { setFilters } = useListContext();
@@ -30,6 +38,11 @@ export const FolderDatagrid = () => {
       <Icon />
       <TextField source="name" />
       <TextField source="type" />
+      <FunctionField
+        source="last_update"
+        render={lastUpdateFormat}
+        sx={{ color: "text.secondary" }}
+      />
       <FolderEditDialog />
     </Datagrid>
   );
