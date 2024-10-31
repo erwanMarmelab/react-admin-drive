@@ -480,14 +480,14 @@
   resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.16.7.tgz#182a325a520f7ebd75de051fceabfc0314cfd004"
   integrity sha512-RtsCt4Geed2/v74sbihWzzRs+HsIQCfclHeORh5Ynu2fS4icIKozcSubwuG7vtzq2uW3fOR1zITSP84TNt2GoQ==
 
-"@mui/icons-material@^5.15.20":
+"@mui/icons-material@^5.15.20", "@mui/icons-material@^5.15.9":
   version "5.16.7"
   resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.16.7.tgz#e27f901af792065efc9f3d75d74a66af7529a10a"
   integrity sha512-UrGwDJCXEszbDI7yV047BYU5A28eGJ79keTCP4cc74WyncuVrnurlmIRxaHL8YK+LI1Kzq+/JM52IAkNnv4u+Q==
   dependencies:
     "@babel/runtime" "^7.23.9"
 
-"@mui/material@^5.15.20":
+"@mui/material@^5.15.20", "@mui/material@^5.15.9":
   version "5.16.7"
   resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.16.7.tgz#6e814e2eefdaf065a769cecf549c3569e107a50b"
   integrity sha512-cwwVQxBhK60OIOqZOVLFt55t01zmarKJiJUWbk0+8s/Ix5IaUzAShqlJchxsIQ4mSrWqgcKCCXKtIlG5H+/Jmg==
@@ -630,6 +630,16 @@
     "@toast-ui/editor" "^3.2.2"
     prosemirror-commands "^1.5.2"
     prosemirror-state "^1.4.3"
+
+"@react-admin/ra-search@^5.2.0":
+  version "5.2.0"
+  resolved "https://registry.marmelab.com/download/@react-admin/ra-search/5.2.0/8688e283761c227a7317a578b854b95d32ceffbd#8688e283761c227a7317a578b854b95d32ceffbd"
+  integrity sha512-oBS9IEqexZhK/OnWZFYUN1w6HyKhc+MWODEe6jpsCEenOHqKPFbaOiUaK2QfQRCbw0bHAlOzwM97+H6nvDsrjw==
+  dependencies:
+    "@mui/icons-material" "^5.15.9"
+    "@mui/material" "^5.15.9"
+    highlight-search-term "^1.0.3"
+    react-hotkeys-hook "^4.5.0"
 
 "@remix-run/router@1.20.0":
   version "1.20.0"
@@ -2086,6 +2096,11 @@ hasown@^2.0.0, hasown@^2.0.1, hasown@^2.0.2:
   dependencies:
     function-bind "^1.1.2"
 
+highlight-search-term@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/highlight-search-term/-/highlight-search-term-1.0.3.tgz#ec0857dfbb48c49856351f25f1d70ac73b921409"
+  integrity sha512-cCZNdQp6Dpq54QvixkrUltZ6rPHnLHapQUOQiZqTojntJRyBuX/jeWY0LvBS76JcDEd7QKbZL780vz3TtbJDJQ==
+
 hoist-non-react-statics@^3.3.1:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
@@ -2992,6 +3007,11 @@ react-hook-form@^7.53.0:
   version "7.53.1"
   resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.53.1.tgz#3f2cd1ed2b3af99416a4ac674da2d526625add67"
   integrity sha512-6aiQeBda4zjcuaugWvim9WsGqisoUk+etmFEsSUMm451/Ic8L/UAb7sRtMj3V+Hdzm6mMjU1VhiSzYUZeBm0Vg==
+
+react-hotkeys-hook@^4.5.0:
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/react-hotkeys-hook/-/react-hotkeys-hook-4.5.1.tgz#990260ecc7e5a431414148a93b02a2f1a9707897"
+  integrity sha512-scAEJOh3Irm0g95NIn6+tQVf/OICCjsQsC9NBHfQws/Vxw4sfq1tDQut5fhTEvPraXhu/sHxRd9lOtxzyYuNAg==
 
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
