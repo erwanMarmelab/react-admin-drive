@@ -1,10 +1,9 @@
 import fakeRestDataProvider from "ra-data-fakerest";
-import data from "./data.json";
 import folders from "./folders.json";
 import files from "./files.json";
 
 const baseDataProvider = fakeRestDataProvider(
-  { ...data, folders, files },
+  { folders, files },
   process.env.NODE_ENV !== "test",
   300,
 );
