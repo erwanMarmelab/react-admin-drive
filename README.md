@@ -11,9 +11,14 @@
 - [x] Add a doc editor (maybe with ra-markdown)
 - [x] Add a PDF viewer
 - [ ] Add a sheet editor (maybe with ra-datagrid-ag)
-- [ ] Add a global search (algolia like)
+- [x] Add a global search (algolia like)
+- [ ] Update layout ([MUI theme template](https://mui.com/store/?utm_source=marketing&utm_medium=referral&utm_campaign=templates-cta#populars))
+
+## Nice To Have
+
 - [ ] Add breadcrumbs
 - [ ] Download / Import
+- [ ] Drop to import
 - [ ] Change fakerest for a real supabase db
 - [ ] Share file access
 

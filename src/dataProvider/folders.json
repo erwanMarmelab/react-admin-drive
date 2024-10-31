@@ -4,97 +4,111 @@
     "name": "Root",
     "type": "Folder",
     "color": "black",
-    "parentId": null
+    "parentId": null,
+    "last_update": "2000-01-01T00:00:00.000Z"
   },
   {
     "id": 1,
     "name": "Music",
     "type": "Folder",
     "color": "black",
-    "parentId": 0
+    "parentId": 0,
+    "last_update": "2023-04-21T16:48:50.000Z"
   },
   {
     "id": 2,
     "name": "University",
     "type": "Folder",
     "color": "blue",
-    "parentId": 0
+    "parentId": 0,
+    "last_update": "2023-07-08T08:12:37.000Z"
   },
   {
     "id": 3,
     "name": "Lessons",
     "type": "Folder",
     "color": "black",
-    "parentId": 2
+    "parentId": 2,
+    "last_update": "2023-07-14T10:08:34.000Z"
   },
   {
     "id": 4,
     "name": "Programming",
     "type": "Folder",
     "color": "green",
-    "parentId": 0
+    "parentId": 0,
+    "last_update": "2023-07-18T10:08:34.000Z"
   },
   {
     "id": 5,
     "name": "Books",
     "type": "Folder",
     "color": "red",
-    "parentId": 0
+    "parentId": 0,
+    "last_update": "2021-10-18T22:48:34.000Z"
   },
   {
     "id": 6,
     "name": "Movies",
     "type": "Folder",
     "color": "pink",
-    "parentId": 0
+    "parentId": 0,
+    "last_update": "2024-05-18T19:48:34.000Z"
   },
   {
     "id": 7,
     "name": "Business plan",
     "type": "Text",
     "fileReference": 0,
-    "parentId": 0
+    "parentId": 0,
+    "last_update": "2024-10-18T14:08:34.000Z"
   },
   {
     "id": 8,
     "name": "Landscape",
     "type": "Image",
     "fileReference": 1,
-    "parentId": 0
+    "parentId": 0,
+    "last_update": "2020-07-25T16:08:34.000Z"
   },
   {
     "id": 9,
     "name": "Dance",
     "type": "Video",
     "fileReference": 2,
-    "parentId": 0
+    "parentId": 0,
+    "last_update": "2010-12-31T16:08:34.000Z"
   },
   {
     "id": 10,
     "name": "Chill music",
     "type": "Phonic",
     "fileReference": 3,
-    "parentId": 0
+    "parentId": 0,
+    "last_update": "2024-07-18T10:08:34.000Z"
   },
   {
     "id": 11,
     "name": "Funding",
     "type": "Sheet",
     "fileReference": 4,
-    "parentId": 0
+    "parentId": 0,
+    "last_update": "2024-10-18T13:08:34.000Z"
   },
   {
     "id": 12,
     "name": "Maths",
     "type": "Folder",
     "color": "purple",
-    "parentId": 3
+    "parentId": 3,
+    "last_update": "2023-07-14T10:08:34.000Z"
   },
   {
     "id": 13,
     "name": "CV/Resume",
     "type": "PDF",
     "fileReference": 5,
-    "parentId": 0
+    "parentId": 0,
+    "last_update": "2024-10-18T14:08:34.000Z"
   }
 ]
