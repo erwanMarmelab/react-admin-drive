@@ -5,7 +5,7 @@ import {
   EditGuesser,
   ShowGuesser,
 } from "react-admin";
-import { Layout } from "./Layout";
+import { Layout } from "./layout/Layout";
 import { dataProvider } from "./dataProvider/dataProvider";
 import folders from "./folders";
 
