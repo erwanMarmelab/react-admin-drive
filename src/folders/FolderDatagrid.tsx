@@ -5,7 +5,10 @@ import {
   type RaRecord,
   useListContext,
   FunctionField,
+  DeleteWithConfirmButton,
+  WithRecord,
 } from "react-admin";
+import { DialogContentText, Stack } from "@mui/material";
 import { format, isToday } from "date-fns";
 
 import { Icon } from "./Icon";
@@ -24,6 +27,9 @@ export const FolderDatagrid = () => {
     <Datagrid
       sx={{
         "& td:nth-of-type(2)": { width: "40px", paddingRight: "0" },
+        "& .MuiTableRow-hover:hover": {
+          "& .actionButtons": { visibility: "visible" },
+        },
       }}
       rowClick={(_id: Identifier, _resource: string, record: RaRecord) => {
         if (record.type === "Folder") {
@@ -43,7 +49,44 @@ export const FolderDatagrid = () => {
         render={lastUpdateFormat}
         sx={{ color: "text.secondary" }}
       />
-      <FolderEditDialog />
+      <ActionButtons />
     </Datagrid>
   );
 };
+
+const ActionButtons = () => (
+  <WithRecord<File>
+    render={(record) => (
+      <Stack
+        className="actionButtons"
+        gap={3}
+        direction="row-reverse"
+        sx={{ visibility: "hidden" }}
+      >
+        <DeleteWithConfirmButton
+          confirmTitle={
+            <>
+              Delete {record.type.toLowerCase()}{" "}
+              <i>&quot;{record.name}&quot;</i>
+            </>
+          }
+          confirmContent={
+            record.type === "Folder" ? (
+              <DialogContentText>
+                Are you sure you want to delete this folder?
+                <br />
+                It will delete all their children.
+              </DialogContentText>
+            ) : (
+              <DialogContentText>
+                Are you sure you want to delete this file?
+              </DialogContentText>
+            )
+          }
+        />
+        <FolderEditDialog />
+        {/* TODO: ExportButton */}
+      </Stack>
+    )}
+  />
+);
