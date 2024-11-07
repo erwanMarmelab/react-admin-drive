@@ -50,7 +50,7 @@ export const ActionButtons = () => {
                   <Button
                     onClick={(e) => {
                       e.stopPropagation();
-                      downloadFile(type, file);
+                      downloadFile(name, type, file);
                       notify(
                         <Alert
                           severity="success"
@@ -81,18 +81,25 @@ export const ActionButtons = () => {
   );
 };
 
-const downloadFile = (type: FileType, file: ReferencedFile) => {
+const downloadFile = (
+  fileName: string,
+  type: FileType,
+  file: ReferencedFile,
+) => {
   switch (type) {
     case "Text":
       if ("content" in file) {
-        downloadMarkdown(file.content);
+        downloadMarkdown(fileName, file.content);
       } else {
         console.error("File does not have a content to download");
       }
       break;
     case "Sheet":
-      // TODO: txt to sheet
-      console.log("Download Sheet file", file.content);
+      if ("content" in file) {
+        downloadSheet(fileName, file.content);
+      } else {
+        console.error("File does not have a content to download");
+      }
       break;
     default:
       if ("url" in file) {
@@ -119,7 +126,14 @@ const downloadAttachement = (url: string) => {
   a.remove();
 };
 
-const downloadMarkdown = (content: string) => {
-    console.log("Download Markdown file", content);
-    console.log("Download Markdown file", JSON.stringify(content));
+const downloadMarkdown = (name: string, content: string) => {
+  console.log(`Download ${name}`, content);
+  console.log(`Download ${name}`, JSON.stringify(content));
+  // TODO: markdown to pdf
+};
+
+const downloadSheet = (name: string, content: string) => {
+  console.log(`Download ${name}`, content);
+  console.log(`Download ${name}`, JSON.stringify(content));
+  // TODO: txt to sheet
 };
