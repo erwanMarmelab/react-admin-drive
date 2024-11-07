@@ -48,7 +48,6 @@ export const MySearchResultPanel = ({
     onClose();
   };
 
-  // TODO: make it beau
   return (
     <Box px={1} py={2}>
       {data.map((file) => {

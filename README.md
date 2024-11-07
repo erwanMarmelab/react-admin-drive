@@ -16,8 +16,9 @@
 
 ## Nice To Have
 
-- [ ] Add breadcrumbs
-- [ ] Download / Import
+- [ ] Add a breadcrumbs like
+- [x] Download
+- [ ] Import
 - [ ] Drop to import
 - [ ] Change fakerest for a real supabase db
 - [ ] Share file access

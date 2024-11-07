@@ -10,8 +10,8 @@ import { format, isToday } from "date-fns";
 
 import { Icon } from "./Icon";
 import { Empty } from "./Empty";
-import { FolderEditDialog } from "./DialogForm";
 import type { File } from "../types";
+import { ActionButtons } from "./ActionButtons";
 
 export const lastUpdateFormat = (record: File) =>
   isToday(new Date(record.last_update))
@@ -24,6 +24,9 @@ export const FolderDatagrid = () => {
     <Datagrid
       sx={{
         "& td:nth-of-type(2)": { width: "40px", paddingRight: "0" },
+        "& .MuiTableRow-hover:hover": {
+          "& .actionButtons": { visibility: "visible" },
+        },
       }}
       rowClick={(_id: Identifier, _resource: string, record: RaRecord) => {
         if (record.type === "Folder") {
@@ -43,7 +46,7 @@ export const FolderDatagrid = () => {
         render={lastUpdateFormat}
         sx={{ color: "text.secondary" }}
       />
-      <FolderEditDialog />
+      <ActionButtons />
     </Datagrid>
   );
 };

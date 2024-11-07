@@ -6,11 +6,12 @@ import { PDFViewer } from "./PDFViewer";
 
 export const FileShow = () => (
   <Show
+  actions={false}
     sx={{
-      "& .RaShow-main:has(#fullpage)": {
+      "& .RaShow-main:has( #fullpage)": {
         height: "100%",
       },
-      "& .MuiStack-root:has(#fullpage)": {
+      "& .MuiStack-root": {
         height: "100%",
       },
     }}
