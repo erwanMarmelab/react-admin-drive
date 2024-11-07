@@ -2,7 +2,7 @@ import { Edit, useEditContext } from "react-admin";
 import { TextEditor } from "./TextEditor";
 
 export const FileEdit = () => (
-  <Edit>
+  <Edit actions={false}>
     <EditPage />
   </Edit>
 );
